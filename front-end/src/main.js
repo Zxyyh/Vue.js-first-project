@@ -12,6 +12,7 @@ import JwPagination from 'jw-vue-pagination';
 import VueFloatLabel from 'vue-float-label';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import VueAlertify from 'vue-alertify';
 import {
   faHome,
   faUser,
@@ -46,7 +47,7 @@ library.add(
 );
 
 Vue.config.productionTip = false;
-
+Vue.use(VueAlertify);
 Vue.use(VeeValidate);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 Vue.component('jw-pagination', JwPagination);

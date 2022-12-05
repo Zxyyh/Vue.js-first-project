@@ -8,15 +8,16 @@
     >
       Isi Data Terlebih Dahulu
     </b-alert>
-    <ul>
-    <li v-for="(item,index) in list" :key="index">
-      {{item.name}} - {{item.class}}
-      <button @click="deleteEvent(index)">Hapus</button>
-    </li>
-  </ul>
-  <input v-model="newData" placeholder="isi data"/>
-  <button @click="addList">Tambah</button>
-    <button @click="downloadFile">Export Data</button>
+    <ul class="list-group">
+      <li class="list-group-item d-flex justify-content-between align-items-center" v-for="(item,index) in list" :key="index">
+        {{item.name}}
+        <span class="badge badge-primary badge-pill">{{item.class}}</span>
+        <button @click="deleteEvent(index)" type="button" class="btn btn-danger">Hapus</button>
+      </li>
+    </ul>
+  <input v-model="newData" placeholder="isi data" input type="text" class="form-control"/>
+  <button @click="addList" type="button" class="btn btn-primary">Tambah</button>
+    <button @click="downloadFile"  type="button" class="btn btn-success">Export Data</button>
   </div>
 </template>
 
@@ -92,5 +93,19 @@ downloadFile() {
   margin: 5px;
 }
 
+button{
+  color: white;
+}
 
+li{
+  width: 25%;
+}
+
+input {
+  width: 25%;
+}
+
+#todo-list-example{
+  margin:auto;
+}
 </style>

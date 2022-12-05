@@ -18,7 +18,7 @@
             <th>Age</th>
             <th>Address</th>
             <th>Phone</th>
-            <th>Last Update</th>
+            <th>Created</th>
             <th>Actions</th>
           </tr>
         </thead>

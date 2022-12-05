@@ -26,6 +26,7 @@
     "popper.js": "^1.15.0",
     "vee-validate": "^2.2.15",
     "vue": "^2.6.10",
+    "vue-alertify": "^1.1.0",
     "vue-float-label": "^1.6.1",
     "vue-router": "^3.0.3",
     "vuex": "^3.0.1"
